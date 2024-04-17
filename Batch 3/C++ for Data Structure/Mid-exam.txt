@@ -1,0 +1,271 @@
+﻿Answer Script
+
+
+Question No. 1-a
+
+
+	Explain Stack and Heap memory.
+	Answer No. 1-a
+	#include<bits/sdtcpp.h>
+At the moment we have 2 specifical case in which we used the Stack to store variables or arrays the first was when the function is called by itself ex.: 
+void fun(int n)
+{
+if(x<n) return;  // the function(1st part) recursive to itself sending ‘’reader’’(*var)
+// to the stack
+int *reader;
+cin>>(*reader);
+fun(x+1,n,index); // when x=n the function gets the ‘’reader’’ sent in the stack 
+    // n times and execute the 2nd part of the function:
+cout<<(*reader)<<” ”; // 2nd part: values of “reader”(*var) is printed to stdout
+// n times * indicate a memory index that is temporary.
+return;
+}
+int main()
+{
+int n; // n is allocated in the heap
+cin>>n;
+fun(n); // the function is executed and no memory is allocated in the heap.
+return 0;
+};
+So (sorry for mistakes), now we have a new! new! situation for temporary use of memory.
+Dynamic vars and arrays are similar but the the memory must freed after use with delete[] command:
+2 arrays in example:
+
+
+// int a[3],b[9]; must be initialized different way:
+int main()
+{
+int* a new int[3];
+int* b new int[9];
+for(int i=0;i<3;i++){cin>>(*a[i]);}
+for(int i=0;i<3;i++){cin>>(*b[i]);}
+for(int i=0;i<3;i++){(*b[i]=*a[i]);}//a[3] will remain in b[1->3] and will be printed out
+delete[] a;  //memory is freed
+for(int i=0;i<3;i++){cout>>a[i]<-;} //this answer also question 3.c). is a syntax=*x[n]
+return 0;
+}
+
+
+
+
+	
+
+
+
+Question No. 1-b
+	Why do we need dynamic memory allocation? Explain with examples.
+	Answer No. 1-b
+	Dynamic vars and arrays are useful to free memory after use; the memory is freed after use with delete[] command:
+2 arrays in example:
+
+
+// int a[3],b[9]; must be initialized different way:
+int main()
+{
+int* a new int[3];
+int* b new int[9];
+for(int i=0;i<3;i++){cin>>(*a[i]);}
+for(int i=0;i<3;i++){cin>>(*b[i]);}
+for(int i=0;i<3;i++){(*b[i]=*a[i]);} //a[3] will remain in b[1->3] and will be printed out
+delete[] a; //memory is freed
+for(int i=0;i<3;i++){cout>>a[i]<-;}// here a is printed in stdout 
+ //this answer also question 3.c). is a syntax=*x[n]
+return 0;
+} Dynamics matrix can be used in functions also in func. self-calling.
+	
+
+
+
+Question No. 1-c
+	How to create a dynamic array? What are the benefits of it?
+	 Answer No. 1-c
+	Dynamic vars and arrays are useful to free memory after use; the memory is freed after use with delete[] command:
+2 arrays in example:
+
+
+// int a[3],b[9]; must be initialized different way:
+int main()
+{
+int* a new int[3];
+int* b new int[9];
+for(int i=0;i<3;i++){cin>>(*a[i]);}
+for(int i=0;i<3;i++){cin>>(*b[i]);}
+for(int i=0;i<3;i++){(*b[i]=*a[i]);} //a[3] will remain in b[1->3] and will be printed out
+delete[] a; //memory is freed
+for(int i=0;i<3;i++){cout>>a[i]<-;}// here a is printed in stdout 
+ //this answer also question 3.c). is a syntax=*x[n]
+return 0;
+} Dynamics matrix can be used in functions also in func. self-calling.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question No. 2-a
+	How does class and object work? How to declare an object?
+	Answer No. 2-a
+	the class is declared after the #includes<> 
+class_name // classes work like db3(class) with records(objects) and fields.
+{
+ public: 
+ data_type sub_class_objs1;
+ data_type sub_class_objs2;
+ data_type sub_class_objs3; // I import data_type as dt 😂 
+// then can be initialized a shorter (template) for the declaration of objects ‘
+’’the constructor’’
+ class_name(dts b1,dt sb2,dt sb3)
+{
+sub_class_objs1=sb1;
+sub_class_objs2=sb2;
+sub_class_objs3=sb3;
+}
+}; at end of class declarations after } is needed ” ; ”
+An object is based on a class and must be declared with class_name object_name;
+
+
+	
+
+
+
+Question No. 2-b
+	What is a constructor and why do we need this? How to create a constructor show with an example.
+	Answer No. 2-b
+	’’the constructor’’
+ class_name(dts b1,dt sb2,dt sb3)
+{
+sub_class_objs1=sb1;
+sub_class_objs2=sb2;
+sub_class_objs3=sb3;
+}
+this is the syntax below it will be an example in code c++
+	
+
+
+
+Question No. 2-c
+	Create a class named Person where the class will have properties name(string), height(float) and age(int). Make a constructor and create a dynamic object of that class and finally pass proper values using the constructor. 
+	 Answer No. 2-c
+	class Pearson
+{
+private:
+char gender;
+public:
+char name[];
+float height;
+int age;
+
+
+Pearson(char nm,float h,a)
+{
+name=nm;
+height=h;
+age=a;
+strcpy(nm,name);
+}
+};
+
+
+int main()
+{
+Pearson new *peter;
+*peter(“pv.tassi”,183,53);
+cout<<peter.name<-;
+cout<<” ”<<(*peter.age)<<endl;
+delete[] peter;
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Question No. 3-a
+	What is the size that an object allocates to the memory?
+	Answer No. 3-a
+	was in the quiz of the third module. Is the sum off all memory required from all is contained in it. (like a record) 
+	
+
+
+
+Question No. 3-b
+	Can you return a static object from a function? If yes, show with an example.
+	Answer No. 3-b
+	Yes and for ex.:
+int order(int arr[],int n,int i){int sortedarr sort(arr,n,less(int)); return sortedarr;}
+int main(){int test={2,46789,32,11,65};test=order(test,sizeof(test),0); return 0;}
+	
+
+
+
+Question No. 3-c
+	Why do we need -> (arrow sign)?
+	 Answer No. 3-c
+	In Dynamic variables, as shown in first answer, is necessary to use one of this two syntax (*var) or var<- to indicate that is a dynamic variable matrix or object. 
+	
+
+
+
+Question No. 3-d
+	Create two objects of the Person class from question 2-c and initialize them with proper value. Now compare whose age is greater, and print his/her name.
+	 Answer No. 3-d
+	Pearson new *a(“alpha”,180,30);
+Pearson new *d(“Delta”,183,53);
+(a.age>b.age)? cout<<(*a.name):cout<<b.name<-;  //Using ternary operator.

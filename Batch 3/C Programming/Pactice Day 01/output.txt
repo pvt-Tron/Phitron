@@ -1,0 +1,3 @@
+0.000000 somma
+0.000000 moltiplicazione
+2.5 divisiobe

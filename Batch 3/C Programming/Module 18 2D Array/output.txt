@@ -1,0 +1,5 @@
+Not Unit Matrix
+Not Scalar Matrix
+Not Diagonal
+Times flag zero: 1
+Times flag: 0
