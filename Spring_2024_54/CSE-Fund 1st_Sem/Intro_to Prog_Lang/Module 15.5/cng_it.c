@@ -1,5 +1,8 @@
 #include<stdio.h>
 
+void cng_it(int *arr3, int x){
+    arr3[x - 1] = 100;
+}
 int main()
 {
     int n2;
@@ -9,7 +12,7 @@ int main()
         scanf("%d ", &arr4[i]);
         printf("%d ", arr4[n2]);
     }
-
+    cng_it(arr4,n2);
     for(int i = 0; i < n2; i++){
         printf("%d", arr4[n2]);
         if(i < n2 - 1){printf(" ");}
