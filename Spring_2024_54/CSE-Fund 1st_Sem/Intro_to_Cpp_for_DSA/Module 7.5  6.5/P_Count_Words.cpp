@@ -5,7 +5,8 @@ int main()
     string s;
     getline(cin, s);
     bool inside_word = false;
-    int cnt = 0;
+    int cnt;
+    cnt = 0;
     // cout<<isalpha('.')<<endl;
     for (char c:s)
     {
@@ -16,7 +17,7 @@ int main()
                 cnt++;
                 // cout << c << endl;
             }
-            inside_word = false;
+            inside_word = true;
         }
         else
         {
