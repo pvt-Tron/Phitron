@@ -1,35 +1,28 @@
-#include<bits/stdc++.h>
-//#include<cstring>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
     string s;
-    char c;
-    int i = 0;
-    int chk1 = 0;
-    int res1 = 0;
-    c = getchar();
-    //stringstream ss;
-    
     getline(cin, s);
-    s = c + s;
-    stringstream ss(s);
-    string word;
-    //int len1 = s.length() + 1;
-    while(ss >> word){
-        for(char c1 : word){
-            if((c1 >= 65 && c1 <= 90)  || (c1 >= 97 && c1 <= 122)){
-                chk1 = 1;
+    bool inside_word = false;
+    int cnt = 0;
+    // cout<<isalpha('.')<<endl;
+    for (char c:s)
+    {
+        if (isalpha(c))
+        {
+            if (inside_word==false)
+            {
+                cnt++;
+                // cout << c << endl;
             }
-            else{break;} 
+            inside_word = false;
         }
-        if(chk1){
-            res1++;
-            chk1 = 0;
+        else
+        {
+            inside_word = false;
         }
     }
-
-    cout << res1;
-    //cout << i << " ";
+    cout << cnt << endl;
     return 0;
 }
