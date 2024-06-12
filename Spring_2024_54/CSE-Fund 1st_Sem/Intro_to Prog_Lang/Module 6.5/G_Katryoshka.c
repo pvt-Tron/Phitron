@@ -25,7 +25,7 @@ int main()
                     break;
             }
             else{
-                if()
+                //if() <<<<<<<<<<<<<<<<
                 res1 += (n1 / 2);
                 break;
             }
