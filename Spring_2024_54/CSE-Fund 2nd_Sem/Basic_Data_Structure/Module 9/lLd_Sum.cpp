@@ -23,6 +23,17 @@ void node_int_tl(Node* &head, Node* &tail){
     b->prev = a;
     c->prev = b;
 }
+void insert_head(Node* &head, Node* &tail, int v){
+    Node* newNode = new Node(v);
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;  // 
+        return;
+    }
+    newNode->next = head;
+    head->prev = newNode;
+    head = newNode;
+}
 void ins_pos(Node* head , int pos, int v){
     Node* newNode = new Node(v);
     Node* tmp = head;    
@@ -78,7 +89,16 @@ void fpN(Node* head){
     }
     cout << endl;
 }
-
+void rever_d(Node* &head, Node* tail){
+    Node* i = head;
+    Node* j = tail;
+    while(i != j && i->next != j){
+        swap(i->val, j->val);
+        i = i->next;
+        j = j->prev;
+    }
+    // rever_d(head, tail); call
+}
 int main()
 {
     Node* head = new Node(10); // initialize
@@ -98,6 +118,7 @@ int main()
     cin >> pos;
     if(pos >= size_N(head)) cout << "Invalid " << endl;
     cout << pos << endl;
+    rever_d(head, tail); // reversed LL
 
     return 0;
 }
