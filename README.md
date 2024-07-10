@@ -1,1 +1,1 @@
-Phitron CSE Learnig Path
+Phitron CSE Learning Path
