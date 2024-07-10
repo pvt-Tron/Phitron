@@ -1,0 +1,25 @@
+/*
+
+<!--
+3 Layer
+html Content HTML is Web Page 
+CSS  Presentation Cascading Style Sheets
+JS   Behavior
+-->
+/////////// CSS
+            --- Types  of   CSS  ---
+               /       |        \
+     InLine CSS  Internal CSS  External CSS
+
+     Internal:
+    <head> or <body>
+            <h1> This is a heading </h1> 
+                        |
+     <h1 style="color: Blue; "> This is a heading </h1> 
+    </head> 
+    Extenal: in .css file
+ */
+h1 {
+    color:blue;
+ }
+    

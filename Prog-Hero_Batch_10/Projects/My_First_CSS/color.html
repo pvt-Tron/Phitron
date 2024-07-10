@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Basic CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0cm;
+            /* border: 0.5px solid; */
+        }
+        #short2{
+            color:red;
+        }
+        #short{
+            color:goldenrod;
+            background-color:blueviolet;
+        }
+        p{
+            background-color: rgba(131, 128, 83, 0.815);
+            width: 50%;
+        }
+        li{
+            color:hwb(0 36% 20%);
+        }
+        #embedded{
+            font-size: large;
+            font-weight: bolder;
+        }
+        .player{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="color: blueviolet;">Learning Basic CSS</h3>
+    <h4 style="background-color: aquamarine;">Inline CSS</h4>
+    <p>CSS: meaning Cascading Style Sheet </p>
+    <p>Style is colorful</p>
+    <p id="short">Short form is CSS</p>
+    <p class="player">Needs style rules and value separated by colon (:)</p>
+    <p class="player">after each styles you need to use semi-colon(:)</p>
+    <ul>
+        <li>Inline</li>
+        <li id="embedded">Internal or Embedded</li>
+        <li>External</li>
+        <p></p>
+        <h3 id="short2">CSS Selectors<h3>
+        <li>Class       selector selector [.class_name:] styles multiple elements</li>
+        <li>Id          Selectors         [#ID_sel_name] styles a unique element</li>
+        <li>Element     selector          ex. p> /p> li li etc. </li>
+        <li>Universal   selector          [*] applies styles to all elements of a Web Page </li>
+        <li>    	                      are overrided from al other stylers</li>
+        <li>Grouping & </li>
+        <li>Attributes  selector          </li>
+    </ul>
+    <p class="player">This is a stand alone paragraph</p>
+    <p class="player">Crick fan</p>
+
+</body>
+</html>
+<!--
+                Class       selector .class_name
+                Id          selector
+CSS Selectors   Element     selector
+                Universal   selector
+                Grouping & 
+                Attributes  selector
+-->

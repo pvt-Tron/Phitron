@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selectors</title>
+    <style>
+        *{
+            margin: 10;
+            /* padding: 0; */
+            width: fit-content;
+
+        }
+        p{
+            color: red;
+        }
+        #fifth, li{
+            font-size: 26px;
+        }
+        .holud, .yellow{
+            background-color: yellowgreen;
+        }
+        .bold{
+            font-size:large;
+            font-weight: 100;
+        }
+        input[type="password"]{
+            color: red;
+
+        }
+        .css{
+            color:aqua
+        }
+        .blog{
+            background-color: #7fffd4;
+            text-wrap:pretty;
+            text-align: justify;
+            margin-left: 15;
+            margin-right: 5;
+        }
+    </style>
+</head>
+<body>
+    <h3>Explore Mixed Selectors</h3>
+    <p>My first <span class="css">line CSS</span></p> 
+    <p class="yellow">My second line CSS</p> 
+    <p>My third line CSS</p> 
+    <p class="yellow bold">My forth line CSS</p> 
+    <p id="fifth">My fifth line CSS</p> 
+    <p class="holud bold">My sixth line CSS</p> 
+    <p>My seventh line CSS</p> 
+    <ol>
+        <li>Class       selector selector [.class_name:] styles multiple elements</li>
+        <li>Id          Selectors         [#ID_sel_name] styles a unique element</li>
+        <li>Element     selector          ex. p> /p> li li etc. </li>
+        <li>Universal   selector          [*] applies styles to all elements of a Web Page </li>
+        <li>    	                      are overrided from al other stylers</li>
+        <li>Grouping & </li>
+        <li>Attributes  selector          </li>
+    </ol>
+    <div class="blog">
+        <h3>My Blog</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tenetur iusto modi tempora minus inventore, asperiores corporis dolorum amet, nisi numquam illum quas totam aperiam porro consequatur excepturi maxime aliquid?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tenetur iusto modi tempora minus inventore, asperiores corporis dolorum amet, nisi numquam illum quas totam aperiam porro consequatur excepturi maxime aliquid?</p>
+    </div>
+    
+    <div>
+        <h3>CSS Box Model</h3>
+    <ol>
+        <li>content</li>
+        <li>border</li>
+        <li>padding</li>
+        <li>width & height</li>
+    </ol>
+    </div>
+</body>
+</html>

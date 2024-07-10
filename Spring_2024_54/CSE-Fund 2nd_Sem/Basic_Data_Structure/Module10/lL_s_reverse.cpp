@@ -51,7 +51,7 @@ void pnt_reverse(Node* n){
 
 // }
 
-void reverse(Node* &head, Node* cur){
+void reverse(Node* &head, Node* cur){ 
     if(cur->next == NULL){
         head = cur;
         return;

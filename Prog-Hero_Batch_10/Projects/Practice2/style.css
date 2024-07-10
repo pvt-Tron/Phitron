@@ -1,0 +1,8 @@
+*{
+    margin: 10px;
+    background-color: rgb(200, 243, 229);
+}
+.header{
+    text-shadow: 10px;
+    color: brown;
+}
