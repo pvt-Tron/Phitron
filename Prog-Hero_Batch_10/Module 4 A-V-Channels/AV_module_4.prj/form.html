@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imput Form</title>
+    <style>
+        label{
+            display: block;
+            margin: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+         <nav><!-- navigation nav -->
+            <ul>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            </ul>
+            
+         </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Please Fill the Form</h2>
+            <form>
+                <label for="name"> Your Name :
+                    <input id="name" type="text" placeholder="Name">
+                </label>
+                <label for="email"> Your Email:
+                    <input id="email" type="email" placeholder="Your email">
+                </label>
+                <label for="phone"> Your Phone:
+                    <input id="phone" type="text" placeholder="Your Phone">
+                </label>
+
+                <fieldset>
+                    <legend>
+                        Pick one actual Occupation
+                    </legend>
+                    <label for="student">
+                        <input type="radio" name="occupation" id="student">Student</label>
+                    <label for="worker">
+                        <input type="radio" name="occupation" id="worker">Worker</label>
+                    <label for="unemployed">
+                        <input type="radio" name="occupation" id="unemployed">Unemployed</label>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Pick one or more Interests
+                    </legend>
+                    <label for="App Design">
+                        <input type="checkbox" name="interests" id="App Design">App Design</label>
+                    <label for="Front End">
+                        <input type="checkbox" name="interests" id="Front End">Front End</label>
+                    <label for="Back End">
+                        <input type="checkbox" name="interests" id="Back End">Back End</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                <textarea title="Special Instructions" placeholder="Special Instruction" name="Special Instructions" id="Special Instructions" cols="30" rows="2"></textarea>
+                </fieldset>
+                <fieldset>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </fieldset>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
