@@ -1,0 +1,3 @@
+50 is an even Number
+424 is a positive Number
+(cc)
