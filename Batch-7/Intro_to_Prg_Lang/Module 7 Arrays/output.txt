@@ -1,0 +1,6 @@
+-- Extra Practice Solutions module 7 batch7 --
+
+The EVEN number(s) in the array are: 12 34 22 14 
+In the array are present 6 ODD number(s)
+The array the MAX number(s): 67
+The array the MIN number(s): 1
