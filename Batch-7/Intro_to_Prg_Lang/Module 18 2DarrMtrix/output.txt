@@ -1,0 +1,42 @@
+for 5 Error 0: 1
+for 5 Error Diag: 1
+> 1 2 3 4 5 <
+> 2 2 3 4 5 <
+> 3 3 3 4 5 <
+> 4 4 4 4 5 <
+> 5 5 5 5 5 <
+> ^ ^ ^ ^ ^ 
+End of Matrix 5
+
+for 0 Error 0: 0
+for 0 Error Diag: 0
+> 0 0 0 0 0 <
+> 0 0 0 0 0 <
+> 0 0 0 0 0 <
+> 0 0 0 0 0 <
+> 0 0 0 0 0 <
+> ^ ^ ^ ^ ^ 
+End of Matrix 0
+
+for 1 Error 0: 0
+for 1 Error Diag: 0
+> 1 0 0 0 0 <
+> 0 1 0 0 0 <
+> 0 0 1 0 0 <
+> 0 0 0 1 0 <
+> 0 0 0 0 1 <
+> ^ ^ ^ ^ ^ 
+End of Matrix 1
+
+for 2 Error 0: 0
+for 2 Error Diag: 0
+> 2 0 0 0 0 <
+> 0 2 0 0 0 <
+> 0 0 2 0 0 <
+> 0 0 0 2 0 <
+> 0 0 0 0 2 <
+> ^ ^ ^ ^ ^ 
+End of Matrix 2
+
+
+End of Cases
