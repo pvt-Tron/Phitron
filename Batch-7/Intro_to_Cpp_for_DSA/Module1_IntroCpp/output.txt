@@ -1,0 +1,7 @@
+prova 12.34560
+65od A 66ev 70ev i = 2
+81od Q 87od W i = 4
+---- next t ----
+97od a 121od y 100ev i = 2
+99od c 110ev i = 4
+101od e 
