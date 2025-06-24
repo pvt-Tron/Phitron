@@ -1,0 +1,1 @@
+{"name":"Local: Pr2EquilibIndex","url":"e:\\Phitron\\Batch-7\\Intro_to_Cpp_for_BDS\\Module3_5_Practice\\Pr2EquilibIndex.cpp","tests":[{"id":1750708440548,"input":"7\n-7 1 5 2 -4 3 0","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Phitron\\Batch-7\\Intro_to_Cpp_for_BDS\\Module3_5_Practice\\Pr2EquilibIndex.cpp","group":"local","local":true}
