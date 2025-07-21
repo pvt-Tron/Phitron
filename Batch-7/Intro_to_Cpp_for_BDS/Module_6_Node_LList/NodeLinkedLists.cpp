@@ -92,7 +92,7 @@ int ins_at_pos(Node* &head, Node* &tail, int val, int pos){
     // }
     
     for(int i = 1; i < pos; i += 1){
-        if(tmp->next != NULL) return 1;
+        if(tmp->next == NULL) return 1;
         tmp = tmp->next;
     }
 
