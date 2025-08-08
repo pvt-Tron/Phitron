@@ -116,8 +116,17 @@ int cntLeafBTnode(BTnode root){
     }
     int l = cntLeafBTnode(root->left);
     int r = cntLeafBTnode(root->right);
-    return l + r + 1;
+    return l + r;
 }
+int maxHeight(Node* root){ // Height/Depth
+    if(root == NULL){
+        return 0;
+    }
+    int l = maxHeight(root->left);
+    int r = maxHeight(root->right);
+    return max(l,r) + 1;
+}
+
 
 int main()
 {
