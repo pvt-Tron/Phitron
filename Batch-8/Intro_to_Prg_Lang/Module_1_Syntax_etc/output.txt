@@ -1,0 +1,9 @@
+The number is: 42
+The number after addition is: 50
+The decimal is: 3.14
+The character is: A
+The large decimal .12 is: 2.718281828459
+The large decimal lf is: 2.718282
+The boolean value is: 1
+The big number is: 1234567890123
+Enter an integer: The number after input is: 50
