@@ -1,5 +1,33 @@
-import numpy as np 
+'''
+    .random.randint(,,)
+    .shape .shape(,) .reshape(,)
+    .ndim() 
+    .flatten() .ravel()
+    .concantenate((,), axis= )
+    .array_split(,)
+    .T
+    .sin() .cos()
+    .genfromtxt()
+    .rad2deg()
+    .log2() .log10()
+    .where()
+    .exp() .sqrt()
+    .sum() .cumulative_sum()
+    .linalg.det()
+    .linalg.matrix_rank()
+    .sort()
+    .dot()
+    .trace()
+    .count_nonzero()
+    .unique()
+    .min() .max()
+    np.mean(arr, axis= )
+    .std(arr) .var()
+    .corrcoef()
 
+
+'''
+import numpy as np
 # SHAPE
 # random create an Array from 1 to 100 of size 10x5
 # sample - 10, feature - 5
